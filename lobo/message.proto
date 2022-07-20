@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package lobo;
+option go_package = "abc/lobo";
+
+message RPCRequest{
+    string server_name = 1;
+    string method_name = 2;
+    bytes message = 3;
+};
+
+message RPCResponce{
+    int32 code = 1;
+    string msg = 2;
+    optional bytes resp = 3;
+}

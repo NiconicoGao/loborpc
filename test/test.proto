@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package test;
+option cc_generic_services = true;
+option go_package = "./test";
+
+
+message BaseResp{
+    int32 code = 1;
+    bytes message = 2;
+}
+message LoginRequest{
+    bytes name = 1;
+    bytes pwd = 2;
+}
+
+message LoginResponse{
+    BaseResp base = 1;
+    bool success = 2;
+}
+
+service UserService{
+    rpc Login(LoginRequest) returns (LoginResponse);
+}
