@@ -31,3 +31,6 @@ See /cmd for example
     cmd: main function of RPC client and server 
     lobo: RPC Server Core 
     test: User customized RPC file
+
+## Architecture
+![Source](./image/1.jpg)
