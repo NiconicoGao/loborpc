@@ -34,3 +34,6 @@ See /cmd for example
 
 ## Architecture
 ![Source](./image/1.jpg)
+
+## Author 
+Lobo Rabbit
